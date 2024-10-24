@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+#kc-form {
+  max-width: 100%; /* Ensure the form container doesn't exceed the viewport width */
+  padding: 0 15px; /* Add some padding for better spacing on mobile */
+}
+
+@media (max-width: 768px) {
+  #kc-form {
+    padding: 0 10px; /* Reduce padding on smaller screens if needed */
+  }
+}
+
+.logo-image {
+  height: 90px; /* Default height for desktop */
+  width: 328.51px; /* Default width for desktop */
+}
+
+@media (max-width: 768px) {
+  /* Adjust breakpoint as needed */
+  .logo-image {
+    height: 80px; /* Height for mobile */
+    width: 305.91px; /* Width for mobile */
+  }
+}
+
+.accountHelpers {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px; /* Adjusted to match Questrial 16px as per your designer's request */
+  letter-spacing: 0.1em; /* 10% Letter Spacing equivalent in em units */
+  color: #000000; /* Black text color */
+  margin-top: 30px;
+  padding: 7px; /* Mobile-only padding */
+  border-radius: 5px; /* Corner radius */
+}
+
+@media (max-width: 600px) {
+  .accountHelpers {
+    background-color: #ffffff; /* Mobile background color */
+    font-size: 12px;
+  }
+}
+
+.accountHelpers a {
+  color: inherit; /* Ensure anchor tags inherit the parent's color */
+}
+
+.darkModeButton {
+  position: fixed;
+  top: 50px; /* Desktop alignment */
+  left: 50px; /* Desktop alignment */
+  z-index: 1000;
+  width: 60px; /* Desktop size */
+  height: 60px; /* Desktop size */
+  padding: 20px; /* Desktop padding */
+  background-color: #eeeeee;
+  border-radius: 8px;
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    /* Darker shadow */ 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  display: flex; /* Ensure button expands to contain the icon */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  border: none; /* Remove button border */
+}
+
+.darkModeIcon {
+  width: 30px; /* Desktop icon size */
+  height: 30px; /* Desktop icon size */
+  /* Ensure icon does not exceed button's width */
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .darkModeButton {
+    top: 15px; /* Mobile alignment */
+    left: 15px; /* Mobile alignment */
+    width: 50px; /* Mobile size */
+    height: 50px; /* Mobile size */
+    padding: 14px; /* Mobile padding */
+  }
+
+  .darkModeIcon {
+    width: 20px; /* Mobile icon size */
+    height: 20px; /* Mobile icon size */
+  }
+}
+
+.inputBoxes {
+  background-color: #eeeeee;
+  height: 75px;
+  width: 530px;
+  border-radius: 8px;
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust for mobile screens */
+  .inputBoxes {
+    height: 55px;
+    width: 365px;
+  }
+}
+
+.helperButton {
+  position: fixed;
+  top: 50px; /* Adjust positioning as needed */
+  right: 50px; /* Position on the right side */
+  z-index: 1000;
+  width: 60px; /* Desktop size */
+  height: 60px; /* Desktop size */
+  padding: 20px; /* Adjust padding for icon alignment */
+  background-color: #dddddd;
+  border-radius: 8px;
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.helperButton img {
+  width: 30px; /* Desktop icon size */
+  height: 30px; /* Desktop icon size */
+  max-width: 100%; /* Ensure icon does not exceed button's width */
+}
+
+@media (max-width: 768px) {
+  .helperButton {
+    top: 15px; /* Mobile alignment */
+    right: 15px; /* Mobile alignment */
+    width: 50px; /* Mobile size */
+    height: 50px; /* Mobile size */
+    padding: 14px; /* Mobile padding */
+  }
+  .helperButton img {
+    width: 20px; /* Mobile icon size */
+    height: 20px; /* Mobile icon size */
+  }
+}
+
+.lightBar {
+  background: linear-gradient(to right, #f4c43f 0%, #00c9ff 50%, #0035aa 100%);
+  height: 30px;
+  width: 710px;
+  border-radius: 0 0 8px 8px;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+@media (max-width: 768px) {
+  .lightBar {
+    width: 405px; /* Mobile width */
+  }
+}
+
+.loginButton {
+  font-family: "Questrial", sans-serif;
+  font-size: 20pt;
+  letter-spacing: 0.1em; /* 10% letter spacing */
+  color: #ffffff;
+  background: linear-gradient(
+    to right,
+    #01a9ed,
+    #0165c6
+  ); /* Gradient background */
+  border-radius: 8px; /* Corner radius */
+  height: 75px; /* Default height */
+  width: 530px; /* Default width for desktop */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: center;
+  text-decoration: none; /* Remove underline for anchor buttons */
+  outline: none; /* Remove outline */
+  padding: 0; /* Remove default padding */
+}
+
+@media (max-width: 768px) {
+  .loginButton {
+    height: 55px;
+    width: 365px; /* Width for mobile */
+    margin: 0 auto; /* Center horizontally */
+  }
+}
+
+.questrialRegular {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16pt;
+  letter-spacing: 0.2em;
+  /* Other styles as needed */
+}
+
+@media (max-width: 768px) {
+  .questrialRegular {
+    font-size: 12pt; /* Mobile font size */
+  }
+}
