@@ -9,16 +9,18 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "build-keycloak-theme": "yarn build && keycloakify",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "build-keycloak-theme": "yarn build && keycloakify",
+  "start": "yarn build-keycloak-theme --watch",
+  "storybook": "storybook dev -p 6006",
+  "build-storybook": "storybook build"
+},
   "author": "u/garronej",
   "license": "MIT",
   "keywords": [],
   "dependencies": {
+    "dotenv": "^16.4.5",
     "evt": "^2.5.7",
     "keycloakify": "^9.6.6",
     "oidc-spa": "^4.6.2",
